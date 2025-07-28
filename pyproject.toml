@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fwx"
+version = "1.0.0"
+description = "Unofficial Python SDK for trading on the FWX platform"
+authors = [
+    { name = "Krittipat Krittakom", email = "Krittipat.kr@ku.th" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+
+dependencies = [
+    "web3==7.12.0"
+    "python-dotenv"
+]
+
+[project.urls]
+Homepage = "https://github.com/Krittipat-K/FWX-SDK"
+Repository = "https://github.com/Krittipat-K/FWX-SDK"
+
+[tool.setuptools]
+packages = ["fwx"]
+
+[tool.setuptools.package-data]
+# Uncomment if you want to include non-Python files, for example:
+# "fwx" = ["data/*.json"]
